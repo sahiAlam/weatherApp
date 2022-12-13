@@ -1,0 +1,44 @@
+/* Common CSS */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Unbounded:wght@500&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html {font-size: 62.5%;}
+body {font-family: 'Poppins', sans-serif;}
+section {margin: 3rem;}
+h1,h2,h3,h4 {line-height: 1.5;}
+p {font-size: 1.5rem;}
+.small_container {width: 75%; margin: 0 auto;}
+
+:root {
+    --black-color: rgb(0,0,0);
+    --medium-black: rgb(45, 45, 45);
+    --nav-bg: #fd7e14;
+    --text-light: rgb(106, 106, 106);
+    --color-white: #fff;
+    --box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+/* Nav Area CSS */
+.navbar-toggler:focus {box-shadow: none;}
+.navbar {background-color: var(--color-white); box-shadow: var(--box-shadow); padding: 1.2rem 0;}
+.nav_container {padding: 0 1.5rem;}
+.navbar-brand {font-size: 2.5rem; font-weight: 500; font-family: 'Kaushan Script', cursive;}
+.navbar-toggler {font-size: 2.2rem; border: 0;}
+.navbar-nav {font-size: 1.6rem;}
+.nav-link {margin-right: 2.8rem;}
+
+/* Search Area CSS */
+#top_banner_section {margin: 5rem 0;}
+#top_banner_section form {text-align: center; margin: 3rem auto; width: 100%;}
+#top_banner_section form input{width: 40%; font-size: 1.6rem; padding: 1.5rem 4rem; border-radius: 3rem 0 0 3rem; color: var(--medium-black); border: 0.2rem solid var(--black-color); font-weight: 500; box-shadow: var(--box-shadow);}
+#top_banner_section form input[type='submit']{width: 12%; background: var(--black-color); color: var(--color-white); border-radius: 0 3rem 3rem 0;}
+#top_banner_section form input[type='submit']:hover{background: var(--medium-black); border: 0.2rem solid var(--medium-black);}
+h1 {font-family: 'Unbounded', cursive; text-align: center; font-size: 4rem;}
+.search_logo {position: relative; left: 3.5rem; top: 0.2rem; z-index: 99; font-size: 1.8rem; color: var(--text-light);}
+
+/* Main body Area CSS */
+#main_body_section {height: 50vh;}
+#main_body_section h2 {font-size: 3.6rem; font-weight: 600;}
+/* #main_body_section .row {background: #ff8787;} */
+.inner_banner_area {background: url(../images/background_image.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.data_card h4 {font-size: 2.2rem;}
+.data_card li {font-size: 1.6rem;}
