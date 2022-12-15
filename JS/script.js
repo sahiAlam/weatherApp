@@ -26,14 +26,33 @@ const getWeather = (city) => {
             // wind_degrees.innerHTML = response.wind_degrees;
             sunrise.innerHTML = response.sunrise;
             sunset.innerHTML = response.sunset;
-    
         })
         .catch((err) => console.error(err));
 }
 
 submit.addEventListener("click", (e) => {
     e.preventDefault();
-    getWeather(city.value)
+    getWeather(inputCity.value)
 })
 
 getWeather('Delhi');
+
+
+
+window.addEventListener('load', () => {
+    setTimeout(
+        function() {
+            if(navigator.geolocation) {
+                navigator.geolocation.watchPosition((position) => {
+                    console.log(position.coords.longitude);
+                    console.log(position.coords.latitude);
+                    document.getElementById('longi').innerHTML = position.coords.longitude;
+                    document.getElementById('lati').innerHTML = position.coords.latitude;
+                });
+            } else {
+                console.log("Here Error!!")
+            }
+        },
+        2000
+    )
+})
