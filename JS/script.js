@@ -40,7 +40,7 @@ getWeather('Delhi');
 
 
 window.addEventListener('load', () => {
-    setTimeout(
+    setInterval(
         function() {
             if(navigator.geolocation) {
                 navigator.geolocation.watchPosition((position) => {
@@ -48,11 +48,13 @@ window.addEventListener('load', () => {
                     console.log(position.coords.latitude);
                     document.getElementById('longi').innerHTML = position.coords.longitude;
                     document.getElementById('lati').innerHTML = position.coords.latitude;
+                    document.querySelectorAll('.location').style.display = "block";
+                    document.querySelectorAll('.location').style.display = "block";
                 });
             } else {
                 console.log("Here Error!!")
             }
         },
-        2000
-    )
+        4000
+    );
 })
