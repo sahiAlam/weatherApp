@@ -34,12 +34,14 @@ const getWeather = async (city) => {
       sunset.innerHTML = response.sunset
     })
     .catch((err) => console.error(err));
+
+    cityName.style.textTransform =  "capitalize";
 };
 
 // Event to submit the weather
 submit.addEventListener("click", (e) => {
   e.preventDefault();
-    return validate();
+  return validate();
 });
 
 
@@ -49,6 +51,7 @@ const validate = () => {
     return false;
   } else {
     getWeather(inputValue.value);
+    inputValue.value = "";
   }};
 
 // Default location
