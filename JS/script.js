@@ -1,3 +1,4 @@
+// Rapid Api Code
 const options = {
   method: "GET",
   headers: {
@@ -6,7 +7,8 @@ const options = {
   },
 };
 
-const getWeather = (city) => {
+// Gatting weather function
+const getWeather = async (city) => {
   cityName.innerHTML = city;
   fetch(
     "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
@@ -29,13 +31,16 @@ const getWeather = (city) => {
       sunset.innerHTML = response.sunset
     })
     .catch((err) => console.error(err));
+    console.log(city)
 };
 
+// Event to submit the weather
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   getWeather(inputCity.value);
 });
 
+// Default location
 getWeather("Delhi");
 
 window.addEventListener("load", () => {
