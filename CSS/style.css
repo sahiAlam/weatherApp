@@ -31,7 +31,7 @@ p {font-size: 1.5rem;}
 #top_banner_section form {text-align: center; margin: 3rem auto; width: 100%;}
 #top_banner_section form input{width: 40%; font-size: 1.6rem; padding: 1.5rem 4rem; border-radius: 3rem 0 0 3rem; color: var(--medium-black); border: 0.1rem solid var(--black-color); font-weight: 500; box-shadow: var(--box-shadow);}
 #top_banner_section form input[type='submit']{width: 12%; background: var(--black-color); color: var(--color-white); border-radius: 0 3rem 3rem 0;}
-#top_banner_section form input[type='submit']:hover{background: var(--medium-black); border: 0.2rem solid var(--medium-black);}
+#top_banner_section form input[type='submit']:hover{background: var(--medium-black); border: 0.1rem solid var(--medium-black);}
 h1 {font-family: 'Unbounded', cursive; text-align: center; font-size: 4rem;}
 .search_logo {position: relative; left: 3.5rem; top: 0.2rem; z-index: 99; font-size: 1.8rem; color: var(--text-light);}
 
