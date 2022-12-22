@@ -10,12 +10,13 @@ p {font-size: 1.5rem;}
 
 :root {
     --black-color: rgb(0,0,0);
-    --background-color: #282c34;
+    --background-color: #111c2c;
     --medium-black: rgb(45, 45, 45);
     --nav-bg: #fd7e14;
     --text-light: rgb(209, 209, 209);
     --color-white: #fff;
     --box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    --btn-color: #0d6efd;
 }
 
 /* Nav Area CSS */
@@ -23,6 +24,7 @@ p {font-size: 1.5rem;}
 .navbar {background-color: var(--medium-black); box-shadow: var(--box-shadow); padding: 1.2rem 0;}
 .nav_container {padding: 0 1.5rem;}
 .navbar-brand {font-size: 2.5rem; font-weight: 500; font-family: 'Kaushan Script', cursive; color: var(--text-light);}
+.navbar-brand:hover{color: var(--text-light) !important;}
 .navbar-toggler {font-size: 2.2rem; border: 0; color: var(--text-light);}
 .navbar-nav {font-size: 1.6rem;}
 .nav-link {margin-right: 2.8rem; color: var(--color-white);}
@@ -32,8 +34,8 @@ p {font-size: 1.5rem;}
 #top_banner_section {margin: 5rem 0;}
 #top_banner_section form {text-align: center; margin: 3rem auto; width: 100%;}
 #top_banner_section form input{width: 40%; font-size: 1.6rem; padding: 1.5rem 4rem; border-radius: 3rem 0 0 3rem; color: var(--medium-black); border: 0.1rem solid var(--black-color); font-weight: 500; box-shadow: var(--box-shadow); outline: none;}
-#top_banner_section form input[type='submit']{width: 12%; background: var(--black-color); color: var(--color-white); border-radius: 0 3rem 3rem 0;}
-#top_banner_section form input[type='submit']:hover{background: var(--medium-black); border: 0.1rem solid var(--medium-black); transition: all 0.3s ease-in-out;}
+#top_banner_section form input[type='submit']{width: 12%; background: var(--btn-color); color: var(--color-white); border-radius: 0 3rem 3rem 0;}
+#top_banner_section form input[type='submit']:hover{background: var(--medium-black); border: 0.1rem solid var(--medium-black); transition: all 0.4s ease-in-out;}
 h1 {font-family: 'Unbounded', cursive; text-align: center; font-size: 4rem; color: var(--color-white);}
 .search_logo {position: relative; left: 3.5rem; top: 0.2rem; z-index: 99; font-size: 1.8rem; color: var(--text-light);}
 .card-title {font-size: 3.8rem;}

@@ -7,6 +7,10 @@
     .search_logo {font-size: 1.5rem; top: 0;}
     .small_container {width: 80%;}
 }
+@media (max-width: 990px) {
+    .navbar-nav {background-color: rgb(209, 209, 209); padding: 3rem 5rem; box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%); border-radius: 2rem; text-align: center; margin-top: 1rem;}
+    .nav-link {color: #333;}
+}
 
 @media (max-width: 768px) {
     html {font-size: 58%;}
