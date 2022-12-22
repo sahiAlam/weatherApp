@@ -1,15 +1,20 @@
-@media (max-width: 768px) {
-    html {font-size: 58%;}
+@media (max-width: 1050px) {
+    html {font-size: 50%;}
     h1 {font-size: 3rem;}
-    #top_banner_section form {width: 100%;}
+    #top_banner_section form {width: 80%;}
     #top_banner_section form input{width: 65%;padding: 1.2rem 3rem 1.2rem 3.5rem;}
     #top_banner_section form input[type='submit']{width: 20%; padding: 1.2rem;}
     .search_logo {font-size: 1.5rem; top: 0;}
     .small_container {width: 80%;}
 }
 
+@media (max-width: 768px) {
+    html {font-size: 58%;}
+    #top_banner_section form {width: 100%;}
+}
+
 @media (max-width: 400px) {
-    html {font-size: 54%;}
+    html {font-size: 50%;}
     h1 {font-size: 2.8rem;}
     #top_banner_section form {width: 100%;}
     #top_banner_section form input{width: 65%;padding: 1rem 3rem 1.2rem 3.5rem;}

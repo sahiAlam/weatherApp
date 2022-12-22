@@ -1,3 +1,7 @@
+
+const inputValue = document.querySelector('.search_area');
+
+
 // Rapid Api Code
 const options = {
   method: "GET",
@@ -26,19 +30,26 @@ const getWeather = async (city) => {
       max_temp.innerHTML = response.max_temp;
       wind_speed.innerHTML = response.wind_speed;
       wind_speed2.innerHTML = response.wind_speed;
-      // wind_degrees.innerHTML = response.wind_degrees;
       sunrise.innerHTML = response.sunrise;
       sunset.innerHTML = response.sunset
     })
     .catch((err) => console.error(err));
-    console.log(city)
 };
 
 // Event to submit the weather
 submit.addEventListener("click", (e) => {
   e.preventDefault();
-  getWeather(inputCity.value);
+    return validate();
 });
+
+
+const validate = () => {
+  if (inputValue.value.trim() == "") {
+    alert("Please Enter your City");
+    return false;
+  } else {
+    getWeather(inputValue.value);
+  }};
 
 // Default location
 getWeather("Delhi");
@@ -47,10 +58,36 @@ window.addEventListener("load", () => {
   setTimeout(function () {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        // document.querySelector('.location1').style.display = "block";
+        const lat = position.coords.latitude;
+        const long = position.coords.longitude;
+
       });
     } else {
       console.log("Here Error!!");
     }
   }, 3000);
+
 });
+
+  // Step 2: Get city name
+// function getCity(coordinates) {
+//   var xhr = new XMLHttpRequest();
+//   var lat = coordinates[0];
+//   var lng = coordinates[1];
+
+//   // Paste your LocationIQ token below.
+//   xhr.open('GET', "https://us1.locationiq.com/v1/reverse.php?key=YOUR_PRIVATE_TOKEN&lat=" + lat + "&lon=" + lng + "&format=json", true);
+//   xhr.send();
+//   xhr.onreadystatechange = processRequest;
+//   xhr.addEventListener("readystatechange", processRequest, false);
+
+//   function processRequest(e) {
+//       if (xhr.readyState == 4 && xhr.status == 200) {
+//           var response = JSON.parse(xhr.responseText);
+//           var city = response.address.city;
+//           console.log(city);
+//           return;
+//       }
+//   }
+// }
+// });
