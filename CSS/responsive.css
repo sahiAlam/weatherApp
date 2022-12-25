@@ -5,7 +5,7 @@
     #top_banner_section form input{width: 65%;padding: 1.2rem 3rem 1.2rem 3.5rem;}
     #top_banner_section form input[type='submit']{width: 20%; padding: 1.2rem;}
     .search_logo {font-size: 1.5rem; top: 0;}
-    .small_container {width: 80%;}
+    .small_container {width: 80%; padding: 2rem 0;}
 }
 @media (max-width: 990px) {
     .navbar-nav {background-color: rgb(209, 209, 209); padding: 3rem 5rem; box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%); border-radius: 2rem; text-align: center; margin-top: 1rem;}
